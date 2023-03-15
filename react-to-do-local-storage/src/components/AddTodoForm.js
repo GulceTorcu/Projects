@@ -1,0 +1,12 @@
+export default function AddTodoForm({ todo, onAddFormSubmit, onAddInputChange }) {
+  return (
+    <form onSubmit={onAddFormSubmit}>
+      <h2>Add Todo</h2>
+      <label key="todo">Add new Todo: </label>
+      <input
+        type="text" placeholder="Create new todo"
+        value={todo}
+        onChange={onAddInputChange} />
+    </form>
+  );
+}
