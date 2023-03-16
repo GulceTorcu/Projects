@@ -27,7 +27,6 @@ export default function App() {
 
   function handleEditInputChange(e) {
     setCurrentTodo({ ...currentTodo, text: e.target.value });
-    console.log(currentTodo);
   }
 
   function handleAddFormSubmit(e) {
@@ -93,6 +92,7 @@ export default function App() {
             todo={todo}
             onEditClick={handleEditClick}
             onDeleteClick={handleDeleteClick}
+            setTodos={setTodos}
           />
         ))}
       </ul>
